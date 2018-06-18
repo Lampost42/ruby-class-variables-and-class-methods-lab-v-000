@@ -20,7 +20,10 @@ class Song
   end
   
   def self.genres
-    genres.each{|genre| genre.deleteif()
+    genre_list = []
+    @@genres.each{|genre| genre_list << genre unless genre_list.include?(genre)}
+    genre_list
+  end
   
   def self.genre_count
     genres_count = {}
