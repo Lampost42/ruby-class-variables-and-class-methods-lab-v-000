@@ -13,6 +13,8 @@ class Song
     @@artists << artist
   end
   
+  attr_reader :name, :artist, :genre
+  
   def self.count 
     @@song_count
   end
