@@ -16,7 +16,7 @@ class Song
   attr_reader :name, :artist, :genre
   
   def self.count 
-    @@song_count
+    @@song
   end
   
   def self.genre_count
