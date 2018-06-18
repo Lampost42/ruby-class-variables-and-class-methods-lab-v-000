@@ -20,7 +20,7 @@ class Song
   end
   
   def self.genres
-    genres.each{|genre| genre.deleteif
+    genres.each{|genre| genre.deleteif()
   
   def self.genre_count
     genres_count = {}
