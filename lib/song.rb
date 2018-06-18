@@ -19,6 +19,9 @@ class Song
     @@count
   end
   
+  def self.genres
+    genres.each{|genre| genre.deleteif
+  
   def self.genre_count
     genres_count = {}
     @@genres.each do |genre|
